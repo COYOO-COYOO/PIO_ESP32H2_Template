@@ -1,0 +1,2 @@
+# PIO_ESP32H2_Template
+PlatformIO的Arduino开发ESP32H2模板
