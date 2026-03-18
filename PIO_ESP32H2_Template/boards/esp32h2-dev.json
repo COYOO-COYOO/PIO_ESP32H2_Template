@@ -1,0 +1,33 @@
+{
+  "build": {
+    "arduino": {
+      "partitions": "default.csv",
+      "memory_type": "qio_qspi"
+    },
+    "core": "esp32",
+    "f_cpu": "96000000L",
+    "f_flash": "48000000L",
+    "flash_mode": "qio",
+    "hwids": [
+      ["0x303A", "0x1001"]
+    ],
+    "mcu": "esp32h2",
+    "variant": "esp32h2",
+    "variants_dir": "variants"
+  },
+  "connectivity": ["bluetooth", "zigbee", "thread"],
+  "debug": {
+    "openocd_target": "esp32h2.cfg"
+  },
+  "frameworks": ["arduino", "espidf"],
+  "name": "ESP32-H2 Dev Module (custom fixed)",
+  "upload": {
+    "flash_size": "4MB",
+    "maximum_ram_size": 327680,
+    "maximum_size": 4194304,
+    "require_upload_port": true,
+    "speed": 115200
+  },
+  "url": "https://github.com/espressif/arduino-esp32",
+  "vendor": "Espressif"
+}
